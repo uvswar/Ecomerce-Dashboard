@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shopify | Analytics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="dashboard.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+    </a>
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+  </div><!-- End Logo -->
+
+  <div class="search-bar">
+    <form class="search-form d-flex align-items-center" method="POST" action="#">
+      <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+      <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+    </form>
+  </div><!-- End Search Bar -->
+
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex align-items-center">
+
+      <li class="nav-item d-block d-lg-none">
+        <a class="nav-link nav-icon search-bar-toggle " href="#">
+          <i class="bi bi-search"></i>
+        </a>
+      </li><!-- End Search Icon-->
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-bell"></i>
+          <span class="badge bg-danger badge-number">1</span>
+        </a><!-- End Notification Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+          <li class="dropdown-header">
+            You have 1 new notification
+            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="notification-item">
+            <i class="bi bi-exclamation-circle text-warning"></i>
+            <div>
+              <h4>Chargeback</h4>
+              <p>You have a new chargeback to review.</p>
+              <p>56 min. ago</p>
+            </div>
+          </li>
+
+        
+
+
+
+        </ul><!-- End Notification Dropdown Items -->
+
+      </li><!-- End Notification Nav -->
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-chat-left-text"></i>
+          <span class="badge bg-success badge-number">3</span>
+        </a><!-- End Messages Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+          <li class="dropdown-header">
+            You have 3 new messages
+            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/favicon.png" alt="" class="rounded-circle">
+              <div>
+                <h4>Shopify Support</h4>
+                <p>Please verify your tax documents.</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/favicon.png" alt="" class="rounded-circle">
+              <div>
+                <h4>Shopify Capital</h4>
+                <p>Your account is now able to take out a loan from Shopify Capital!</p>
+                <p>2 days ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+              <div>
+                <h4>Janet Heart</h4>
+                <p>Hi, I am interested in purchasing your store for $5,000. Please reach back to me about any further inquiries janet.heart@gmail.com</p>
+                <p>6 days ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="dropdown-footer">
+            <a href="#">Show all messages</a>
+          </li>
+
+        </ul><!-- End Messages Dropdown Items -->
+
+      </li><!-- End Messages Nav -->
+
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+          <span class="d-none d-md-block dropdown-toggle ps-2">D. Huey</span>
+        </a><!-- End Profile Iamge Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+          <li class="dropdown-header">
+            <h6>Donnovan Huey</h6>
+            <span>Web UI/UX Developer</span>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <i class="bi bi-person"></i>
+              <span>My Profile</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <i class="bi bi-gear"></i>
+              <span>Account Settings</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <i class="bi bi-question-circle"></i>
+              <span>Need Help?</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="#">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Sign Out</span>
+            </a>
+          </li>
+
+        </ul><!-- End Profile Dropdown Items -->
+      </li><!-- End Profile Nav -->
+
+    </ul>
+  </nav><!-- End Icons Navigation -->
+
+</header><!-- End Header -->
+
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="dashboard.html">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="orders.html">
+        <i class="bi bi-gift"></i>
+        <span>Orders</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="analytics.html">
+        <i class="bi bi-graph-up"></i>
+        <span>Analytics</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-error-404.html">
+        <i class="bi bi-p-square-fill"></i>
+        <span>Products</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-error-404.html">
+        <i class="bi bi-question-square-fill"></i>
+        <span>F.A.Q</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-error-404.html">
+        <i class="bi bi-chat"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="users-profile.html">
+        <i class="bi bi-gear"></i>
+        <span>Settings</span>
+      </a>
+    </li>
+    
+
+
+  </ul>
+
+</aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Analytics</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active">Analytics</li>
+          
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Sales</h5>
+              <h3 class="card-subtitle">$6,052.59</h3>
+              <div id="lineChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart"), {
+                    series: [{
+                      name: "Online Orders",
+                      data: [8, 22, 25, 66, 36, 50, 29, 37, 93]
+                    }],
+                    chart: {
+                      height: 250,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Sessions</h5>
+              <h3 class="card-subtitle">9,050</h3>
+              <!-- Line Chart -->
+              <div id="lineChart1"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart1"), {
+                    series: [{
+                      name: "Sessions",
+                      data: [250, 600, 460, 900, 800, 990, 1250, 1600, 2200]
+                    }],
+                    chart: {
+                      height: 250,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Returning customer rate</h5>
+              <h3 class="card-subtitle">3%</h3>
+              <!-- Line Chart -->
+              <div id="lineChart2"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart2"), {
+                    series: [{
+                      name: "Desktops",
+                      data: [0, 0, 1, 5, 2, 2, 3, 4, 3]
+                    }],
+                    chart: {
+                      height: 250,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Conversion rate</h5>
+              <h3 class="card-subtitle">6%</h3>
+              <br>
+              <p>Percentage of sessions that resulted in orders, out of the total number of sessions.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Top product units sold</h5>
+              <a class="card-subtitle" href ="#">Waterproof Watch</a>
+              <br>
+              <p>Products with the most individual units sold. Includes orders from all sales channels.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sales by social source</h5>
+              <h3 class="card-subtitle">$1,600.38</h3>
+              <br>
+              <p>Total sales on your storefront(s) that came from a social referrer source.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sales attributed to marketing</h5>
+              <h3 class="card-subtitle">$2,900.62</h3>
+              <!-- Line Chart -->
+              <div id="lineChart6"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart6"), {
+                    series: [{
+                      name: "Desktops",
+                      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                    }],
+                    chart: {
+                      height: 150,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Average order value</h5>
+              <h3 class="card-subtitle">$78.35</h3>
+              <!-- Line Chart -->
+              <div id="lineChart3"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart3"), {
+                    series: [{
+                      name: "Avg",
+                      data: [65, 41, 100, 85, 80, 110, 140, 105, 120]
+                    }],
+                    chart: {
+                      height: 150,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Top referrers by sessions</h5>
+              <h3 class="card-subtitle">N/A</h3>
+              <br>
+              <p>External websites from which the most sessions came to your storefront(s).</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sales by location</h5>
+              <table class="table table-borderless">
+               
+                <tbody>
+                  <tr>
+                    <td>United States</td>
+                    <td>525</td>
+                    <td>65%</td>
+                  </tr>
+                  <tr>
+                    <td>Canada</td>
+                    <td>225</td>
+                    <td>25%</td>
+                  </tr>
+                  <tr>
+                    <td>United Kingdom</td>
+                    <td>80</td>
+                    <td>10%</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+             
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sales by device type</h5>
+              <table class="table table-borderless">
+               
+                <tbody>
+                  <tr>
+                    <td>Mobile</td>
+                    <td>5252.09</td>
+                    <td>89%</td>
+                  </tr>
+                  <tr>
+                    <td>Desktop</td>
+                    <td>850</td>
+                    <td>11%</td>
+                  </tr>
+                
+                 
+                </tbody>
+              </table>
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sessions by traffic source</h5>
+              <p>Number of sessions on your storefront(s) grouped by the type of traffic source.</p>
+      
+              <table class="table table-borderless">
+               
+                <tbody>
+                  <tr>
+                    <td>Direct</td>
+                    <td>3900</td>
+                    <td>62%</td>
+                  </tr>
+                  <tr>
+                    <td>Search</td>
+                    <td>2600</td>
+                    <td>45%</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+    
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sessions by device type</h5>
+              <table class="table table-borderless">
+               
+                <tbody>
+                  <tr>
+                    <td>Mobile</td>
+                    <td>7,950</td>
+                    <td>79%</td>
+                  </tr>
+                  <tr>
+                    <td>Desktop</td>
+                    <td>2300</td>
+                    <td>21%</td>
+                  </tr>
+                
+              
+                </tbody>
+              </table>
+             
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Orders</h5>
+              <h3 class="card-subtitle">890</h3>
+              <!-- Line Chart -->
+              <div id="lineChart5"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#lineChart5"), {
+                    series: [{
+                      name: "Desktops",
+                      data: [82, 105, 96, 51, 49, 62, 109, 116, 220]
+                    }],
+                    chart: {
+                      height: 200,
+                      type: 'line',
+                      zoom: {
+                        enabled: false
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      curve: 'straight'
+                    },
+                    grid: {
+                      row: {
+                        colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                        opacity: 0.5
+                      },
+                    },
+                    xaxis: {
+                      categories: ['May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
